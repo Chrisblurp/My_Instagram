@@ -1,0 +1,90 @@
+.modalBackground{
+    width: 50vh;
+    height: 40vh;
+    background-color: rgba(209, 202, 202, 0.959);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:ease-in-out;
+}
+
+.modalContainer{
+    width: 400px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: -100px;
+}
+
+.modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.titleClosBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.titleClosBtn button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .body{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+
+}
+
+.modalContainer .footer{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button{
+   width: 150px;
+   height: 45px;
+   margin: 10px;
+   border: none;
+   background-color: cornflowerblue;
+   color: white;
+   border-radius: 8px;
+   font-size: 20px;
+   cursor: pointer;
+
+}
+
+#cancelBtn{
+    background-color: crimson;
+}
+.x{
+    color: crimson;;
+}
+@media only screen and (max-width: 600px) {
+    .modalBackground{
+        width: 35vh;
+        height: 40vh;
+    }
+    .modalContainer .footer button{
+        width: 50px;
+        height: 35px;
+        margin: 5px;
+    }
+
+}
